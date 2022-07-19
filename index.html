@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Control traffic light</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="color: #256788;"> <span style="color: rgba(146,142,129,255);">CONTROL</span> TRAFFIC LIGHT</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>Đối tượng đầu vào</li>
+                <li>Bảng các hướng đồng ý</li>
+                <li>Thuật toán</li>
+                <li>Chương trình</li>
+            </ul>
+        </nav>
+
+        <article>
+            <h2>Chương trình</h1>
+                <p>INPUT</p>
+                <div style="float: left; width: 50%; height: 250px; background-color: aqua;">
+                    <label>arrD:</label><br>
+                    <input type="text" placeholder="d5, d2, d7, d11, d4, d10, d9, d8, d6"><br>
+                    <label>arrD_current_row:</label><br>
+                    <input type="text" placeholder="d1, d2, d9, d6"><br>
+                    <label>arrD_current_pro:</label><br>
+                    <input type="text" placeholder="d4, d5, d7, d8, d10, d11"><br>
+                    <button>Reset</button>
+                    <button>Submit</button><br>
+                </div>
+                <div style="float: left; width: 50%; height: 250px; background-color: yellow;">
+                    <label>arrDs:</label><br>
+                    <textarea id="w3review" name="w3review" rows="10" cols="50" style="background-color: rgba(255,255,203,255);"></textarea>
+                    <br>
+                    <button>Run Auto with arrDs</button>
+                </div>
+                <p>OUTPUT</p>
+                <div style="float: left; width: 50%; height: 250px; background-color: bisque;">
+                    <label>D_new_row:</label><br>
+                    <textarea id="w3review" name="w3review" rows="10" cols="50"></textarea>
+                    <br>
+                    <button>Start Count Times</button>
+                    <input type="checkbox" name="showTime" id="showTime">
+                    <label for="showTime">Shows Times</label>
+                </div>
+                <div style="float: left; width: 50%; height: 250px; background-color: rgb(185, 117, 33);">
+                    <label>D_new_pro:</label><br>
+                    <textarea id="w3review" name="w3review" rows="10" cols="50"></textarea>
+                </div style="float: left; width: 100%;">
+                <div>
+                    <img src="img/stop.jpg" alt="go" id="d1" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d2" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d3" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d4" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d5" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d6" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d7" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d8" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d9" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d10" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d11" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d12" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d13" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d14" hidden width="40" height="100">
+                    <img src="img/stop.jpg" alt="go" id="d15" hidden width="40" height="100">
+
+
+                    <canvas id="myCanvas" width="800" height="700" style="border:1px solid #d3d3d3;">
+                        Your browser does not support the canvas element.
+                    </canvas>
+                </div>
+        </article>
+    </section>
+
+    <!-- <footer>
+        <p>Footer</p>
+    </footer> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
